@@ -46,7 +46,13 @@ export default function Home() {
               How it works
             </a>
             <Link
-              href="/generate"
+              href="/login"
+              className="hidden transition hover:text-stone-900 sm:inline dark:hover:text-white"
+            >
+              Sign in
+            </Link>
+            <Link
+              href="/register"
               className="rounded-full bg-stone-900 px-5 py-2.5 font-medium text-white transition hover:bg-stone-700 dark:bg-white dark:text-stone-900 dark:hover:bg-stone-200"
             >
               Get started
@@ -71,7 +77,7 @@ export default function Home() {
         </p>
         <div className="mt-10 flex flex-col gap-3 sm:flex-row">
           <Link
-            href="/generate"
+            href="/register"
             className="rounded-full bg-stone-900 px-8 py-4 text-base font-medium text-white transition hover:bg-stone-700 dark:bg-white dark:text-stone-900 dark:hover:bg-stone-200"
           >
             Create a certificate
@@ -152,7 +158,7 @@ export default function Home() {
           It&apos;s free, fast, and requires no sign-up.
         </p>
         <Link
-          href="/generate"
+          href="/register"
           className="mt-10 inline-block rounded-full bg-stone-900 px-10 py-4 text-base font-medium text-white transition hover:bg-stone-700 dark:bg-white dark:text-stone-900 dark:hover:bg-stone-200"
         >
           Get started for free
