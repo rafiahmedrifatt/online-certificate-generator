@@ -1,0 +1,55 @@
+import { cn } from "@/lib/utils";
+
+export function Table({ className, ...props }: React.TableHTMLAttributes<HTMLTableElement>) {
+  return (
+    <div className="w-full overflow-x-auto">
+      <table className={cn("w-full caption-bottom text-sm", className)} {...props} />
+    </div>
+  );
+}
+
+export function THead({ className, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) {
+  return (
+    <thead
+      className={cn(
+        "border-b border-stone-200 text-left text-xs uppercase tracking-wider text-stone-500 dark:border-stone-800 dark:text-stone-400",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+export function TBody({ className, ...props }: React.HTMLAttributes<HTMLTableSectionElement>) {
+  return (
+    <tbody
+      className={cn(
+        "divide-y divide-stone-100 dark:divide-stone-800/70",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+export function TR({ className, ...props }: React.HTMLAttributes<HTMLTableRowElement>) {
+  return (
+    <tr
+      className={cn("transition hover:bg-stone-50 dark:hover:bg-stone-800/40", className)}
+      {...props}
+    />
+  );
+}
+
+export function TH({ className, ...props }: React.ThHTMLAttributes<HTMLTableCellElement>) {
+  return <th className={cn("px-4 py-3 font-medium", className)} {...props} />;
+}
+
+export function TD({ className, ...props }: React.TdHTMLAttributes<HTMLTableCellElement>) {
+  return (
+    <td
+      className={cn("px-4 py-3.5 text-stone-700 dark:text-stone-300", className)}
+      {...props}
+    />
+  );
+}
