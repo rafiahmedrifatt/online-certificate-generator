@@ -40,7 +40,7 @@ export default function TemplatesPage() {
           <Card key={t.id} className="group overflow-hidden">
             <Link href={`/templates/${t.id}/designer`}>
               <div
-                className={`relative flex aspect-[1.414/1] items-center justify-center bg-gradient-to-br ${swatch[t.accent]} p-6`}
+                className={`relative flex aspect-[1.414/1] items-center justify-center bg-linear-to-br ${swatch[t.accent]} p-6`}
               >
                 <div className="flex h-full w-full flex-col items-center justify-center border border-white/60 bg-white/40 p-4 text-center backdrop-blur-sm dark:border-white/10 dark:bg-black/20">
                   <p className="text-[9px] uppercase tracking-[0.3em] text-stone-500">Certificate</p>
